@@ -21,11 +21,17 @@
 title: Red Hat Brad - Doing all the Things
 email: bkrumme@redhat.com
 description: Welcome to the blog that's written by someone who hates to blog, but loves tech.
-url: https://bpkrumme.github.io
+url: https://www.redhatbrad.com
 github_username:  bpkrumme
 
 # Build settings
 theme: minima
+
+minima:
+  skin: auto
+  hide_site_feed_link: true
+  show_excerpts: true
+
 plugins:
   - jekyll-feed
 
