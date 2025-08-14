@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Red Hat Brad - Doing all the Things
+title: Brad does all the (tech) things!
 email: bkrumme@redhat.com
 description: Welcome to the blog that's written by someone who hates to blog, but loves tech.
-url: https://www.redhatbrad.com
+url: https://www.braddoestech.com
 github_username:  bpkrumme
 
 # Build settings
