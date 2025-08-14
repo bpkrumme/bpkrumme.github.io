@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Whoops!  I made a boo-boo!  Also: what's coming on the site"
+date:   2025-08-14
+---
+### Slight snafu...easy fix!
+
+I made a little boo-boo and used a domain name and blog name that I shouldn't have.  All is well and I've updated the site to something a little more generic, but still suits me.
+
+### What's coming on the site
+
+I have some topics that I'll be covering in upcoming posts and want to share them with everyone.  Here's what you can expect to see over the next few months...
+
+* *An overview of my homelab including the hardware and software I use*
+* *How-tos for multiple integrations with Ansible and Ansible Automation Platform*
+  * *Server Lifecycle with Terraform and Ansible Automation Platform*
+  * *Server Lifecycle with OpenShift Virtualization and Ansible Automation Platform*
+  * *Patching Operations with Red Hat Satellite and Ansible Automation Platform*
+* *Day 1 and Day 2 operations: what's the difference?*
+* *The IT Value Stream and how you can exploit it to accelerate your automation practice*
+* *AI and the future of tech (hint: it's only software)*
