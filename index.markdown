@@ -4,3 +4,6 @@
 
 layout: home
 ---
+{%- assign latest_post = site.posts | first -%}
+  ## {{ latest_post.title }}
+  {{ latest_post.content }}

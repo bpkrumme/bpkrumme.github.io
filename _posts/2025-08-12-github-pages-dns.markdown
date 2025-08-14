@@ -3,7 +3,7 @@ layout: post
 title:  "Configuring Custom DNS for GitHub Pages using Amazon Route 53"
 date:   2025-08-12
 ---
-## Introduction
+## *Introduction*
 
 In my efforts to share knowledge about tech things, setting up a blog seemed like one of the easier things to do.  It is a challenge that is relatively easy to accomplish using tools which are freely available.
 
@@ -19,7 +19,7 @@ Configuring GitHub Pages to use a custom domain has a few steps.
 
 ***Let's get started!***
 
-### Part 1: Adding a Validated Domain to GitHub
+### *Part 1: Adding a Validated Domain to GitHub*
 
 In order to use a custom domain with GitHub Pages, a domain needs to be added and validated in our profile.
 
@@ -47,7 +47,7 @@ This will present an instruction page which includes the TXT record we need to a
 
 ![Screenshot of TXT record instructions](/assets/images/8-12-25/6_domain_verify.png)
 
-### Part 2: Adding the TXT record to Route 53
+### *Part 2: Adding the TXT record to Route 53*
 
 A TXT record is used to store text-based information which is associated with a domain name.  This could be human-readable or machine-readable information.  TXT records are commonly used for email authentication and domain verification.  For our purposes, the TXT record we are adding is being used for domain verification.  If you're familiar with DNS services, adding records should be straightforward.  This is how to add the record to Route 53.
 
@@ -84,7 +84,7 @@ This should provide a result which looks similar to this:
 
 ![Screenshot of dig results](/assets/images/8-12-25/11_dig_results.png)
 
-### Part 3: Verify the domain in GitHub
+### *Part 3: Verify the domain in GitHub*
 
 Now that we have created the necessary TXT record, we can go back to GitHub and verify our domain.
 
@@ -96,7 +96,7 @@ This should result in successful verification of our domain!
 
 ![Screenshot of verified domain](/assets/images/8-12-25/13_verified.png)
 
-### Part 4: Add a CNAME record to Route 53
+### *Part 4: Add a CNAME record to Route 53*
 
 Now that we have successfully added and verified our custom domain for GitHub Pages, we need to configure the subdomain for our site.  This could be any subdomain that we like, however for our purposes the **www** subdomain will do nicely.
 
@@ -119,7 +119,7 @@ This should provide a result which looks similar to this:
 
 ![Screenshot of dig results 2](/assets/images/8-12-25/15_dig_results_2.png)
 
-### Part 5:  Configure the GitHub Pages repository to use a custom domain
+### *Part 5:  Configure the GitHub Pages repository to use a custom domain*
 
 At this point all of our DNS records are created and our domain is verified with GitHub.  There isn't anything else to do in Route 53.  The last thing to do is configure our GitHub Pages repository to use our custom subdomain we just added to Route 53.
 
