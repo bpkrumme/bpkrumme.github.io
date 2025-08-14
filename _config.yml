@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brad does all the (tech) things!
+title: Brad Does Tech!
 email: bkrumme@redhat.com
 description: Welcome to the blog that's written by someone who hates to blog, but loves tech.
 url: https://www.braddoestech.com
