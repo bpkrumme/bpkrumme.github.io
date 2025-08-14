@@ -3,6 +3,10 @@ layout: post
 title:  "Welcome to Brad Does Tech!"
 date:   2025-08-01
 ---
-Welcome to the site.  I'm still getting things going, so hang tight for me and there will be content coming soon.
+Welcome to Brad Does Tech!
+
+This is where I'll be posting about cool tech things I learn or demo for my customers.  Stay tuned for more!
 
 --Brad
+
+*updated on 8/14/2025*
