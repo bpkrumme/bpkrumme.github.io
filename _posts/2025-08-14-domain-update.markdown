@@ -6,6 +6,7 @@ date:   2025-08-14
 ### *Slight snafu...easy fix!*
 
 I made a little boo-boo and used a domain name and blog name that I shouldn't have.  All is well and I've updated the site to something a little more generic, but still suits me.
+<!-- endexcerpt -->
 
 To make up for it, here is a picture of my Maine Coon cat, Cirrus.
 

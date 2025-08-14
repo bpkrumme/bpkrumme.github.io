@@ -3,9 +3,9 @@ layout: post
 title:  "Configuring Custom DNS for GitHub Pages using Amazon Route 53"
 date:   2025-08-12
 ---
-## *Introduction*
 
 In my efforts to share knowledge about tech things, setting up a blog seemed like one of the easier things to do.  It is a challenge that is relatively easy to accomplish using tools which are freely available.
+<!-- endexcerpt -->
 
 This site uses GitHub Pages and an underlying Ruby gem called [jekyll](https://jekyllrb.com/) to generate the site code.  GitHub Pages serves your blog site via a repository which by default uses **<your_github_usename>.github.io** as the URL (and the name of the repository!).  If you don't want to use that URL, there are other options for custom domains, including the method explained here.  I have a domain which is already registered and managed in Route 53.  Neither configuring a GitHub Pages site nor registering and managing a domain with Route 53 are discussed here, only the configuration required to make GitHub pages use a custom domain from Route 53.
 

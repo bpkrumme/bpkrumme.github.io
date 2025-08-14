@@ -28,9 +28,11 @@ github_username:  bpkrumme
 theme: minima
 
 minima:
-  skin: auto
-  hide_site_feed_link: true
-  show_excerpts: true
+  - skin: auto
+  - hide_site_feed_link: true
+
+show_excerpts: true
+excerpt_separator: <!-- endexcerpt -->
 
 plugins:
   - jekyll-feed
