@@ -19,18 +19,18 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Brad Does Tech!
+title_separator: |
+name: Brad Krumme
 email: bradk@redhat.com
 description: Welcome to the blog that's written by someone who hates to blog, but loves tech.
 url: https://www.braddoestech.com
 github_username:  bpkrumme
+repository: bpkrumme/bpkrumme.github.io
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 
-minima:
-  - skin: auto
-  - hide_site_feed_link: true
-
+minimal_mistakes_skin: "dark"
 show_excerpts: true
 excerpt_separator: <!-- endexcerpt -->
 
