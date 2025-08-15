@@ -1,0 +1,12 @@
+Brad:
+  name: "Brad Krumme"
+  avatar: "/assets/images/bk_profile.jpg"
+  bio: "Solution Architect at Red Hat specializing in Ansible and the Ansible Automation Platform."
+  location: USA
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/bradkrumme/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bpkrumme/"

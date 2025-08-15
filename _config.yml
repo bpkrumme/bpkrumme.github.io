@@ -56,6 +56,7 @@ plugins:
 #   - vendor/ruby/
 
 timezone: America/New_York
+locale: "en-US"
 minimal_mistakes_skin: "dark"
 show_excerpts: true
 excerpt_separator: <!-- endexcerpt -->
@@ -73,14 +74,8 @@ defaults:
       classes: wide
       read_time: true
       show_date: true
-      author:
-        name: "Brad Krumme"
-        avatar: "/assets/images/bk_profile.jpg"
-        bio: "Solution Architect at Red Hat specializing in Ansible and the Ansible Automation Platform."
-        location: USA
-        links:
-          - label: "LinkedIn"
-            url: "https://www.linkedin.com/in/bradkrumme/"
+      author: Brad
+      share: true
   # _pages
   - scope:
       path: ""
@@ -89,5 +84,6 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+      author: Brad
 
 include: ["_pages"]

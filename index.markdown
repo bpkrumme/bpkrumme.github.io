@@ -4,17 +4,8 @@
 
 layout: home
 author_profile: true
-author:
-  name: "Brad Krumme"
-  avatar: "/assets/images/bk_profile.jpg"
-  bio: "Solution Architect at Red Hat specializing in Ansible and the Ansible Automation Platform."
-  location: USA
-  links:
-    - label: "LinkedIn"
-      url: "https://www.linkedin.com/in/bradkrumme/"
-    - label: "GitHub"
-      url: "https://github.com/bpkrumme/"
+author: Brad
 ---
 {%- assign latest_post = site.posts | first -%}
-  ## {{ latest_post.title }}
-  {{ latest_post.content }}
+# {{ latest_post.title }}
+{{ latest_post.content }}
