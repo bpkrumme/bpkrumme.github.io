@@ -28,9 +28,9 @@ github_username:  bpkrumme
 repository: bpkrumme/bpkrumme.github.io
 
 # Build settings
-theme: minimal-mistakes-jekyll
+theme: minima
 
-minimal_mistakes_skin: "dark"
+#minimal_mistakes_skin: "dark"
 show_excerpts: true
 excerpt_separator: <!-- endexcerpt -->
 
