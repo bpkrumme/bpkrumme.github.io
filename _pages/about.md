@@ -1,6 +1,5 @@
 ---
-layout: page
-title: About
+title: About Brad
 permalink: /about/
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "Configuring Custom DNS for GitHub Pages using Amazon Route 53"
 date:   2025-08-12
 ---

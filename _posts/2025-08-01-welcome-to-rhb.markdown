@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "Welcome to Brad Does Tech!"
 date:   2025-08-01
 ---

@@ -30,13 +30,10 @@ repository: bpkrumme/bpkrumme.github.io
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
 
-minimal_mistakes_skin: "dark"
-show_excerpts: true
-excerpt_separator: <!-- endexcerpt -->
-
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,3 +54,40 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+timezone: America/New_York
+minimal_mistakes_skin: "dark"
+show_excerpts: true
+excerpt_separator: <!-- endexcerpt -->
+search: true
+enable_copy_code_button: true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+      read_time: true
+      show_date: true
+      author:
+        name: "Brad Krumme"
+        avatar: "/assets/images/bk_profile.jpg"
+        bio: "Solution Architect at Red Hat specializing in Ansible and the Ansible Automation Platform."
+        location: USA
+        links:
+          - label: "LinkedIn"
+            url: "https://www.linkedin.com/in/bradkrumme/"
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+
+include: ["_pages"]
