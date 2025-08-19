@@ -5,6 +5,9 @@
 layout: home
 author_profile: true
 author: Brad
+header:
+  overlay_image: /assets/images/bdt_wide.jpeg
+caption: ""
 ---
 {%- assign latest_post = site.posts | first -%}
 # {{ latest_post.title }}

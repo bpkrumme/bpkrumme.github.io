@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brad Does Tech!
+#title: Brad Does Tech!
 title_separator: |
 name: Brad Krumme
 email: bradk@redhat.com
@@ -26,6 +26,8 @@ description: Welcome to the blog that's written by someone who hates to blog, bu
 url: https://www.braddoestech.com
 github_username:  bpkrumme
 repository: bpkrumme/bpkrumme.github.io
+logo: /assets/images/bdt_square.jpeg
+masthead_title: Brad Does Tech!
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
