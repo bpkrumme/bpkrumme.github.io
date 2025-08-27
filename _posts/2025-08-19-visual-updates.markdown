@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Site visual updates"
 date:   2025-08-19
 ---

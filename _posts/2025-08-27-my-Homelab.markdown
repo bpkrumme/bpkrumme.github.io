@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "The Hardware and Software I use in my Homelab"
 date:   2025-08-27
 ---

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Whoops!  I made a boo-boo!  Also: what's coming on the site"
 date:   2025-08-14
 ---

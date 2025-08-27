@@ -65,6 +65,8 @@ excerpt_separator: <!-- endexcerpt -->
 search: true
 enable_copy_code_button: true
 
+include: ["_pages"]
+
 defaults:
   # _posts
   - scope:
@@ -87,5 +89,3 @@ defaults:
       author_profile: true
       classes: wide
       author: Brad
-
-include: ["_pages"]
