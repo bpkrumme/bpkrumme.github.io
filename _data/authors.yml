@@ -4,6 +4,9 @@ Brad:
   bio: "Solution Architect at Red Hat specializing in Ansible and the Ansible Automation Platform."
   location: USA
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bkrumme@redhat.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/bradkrumme/"
