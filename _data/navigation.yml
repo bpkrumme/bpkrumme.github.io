@@ -4,3 +4,5 @@ main:
     url: /
   - title: About
     url: /about/
+  - title: Posts Archive
+    url: /posts-archive/
