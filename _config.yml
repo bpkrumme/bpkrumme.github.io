@@ -81,9 +81,7 @@ defaults:
       share: true
       toc: true
       toc_sticky: true
-      header:
-        og_image: /assets/images/bdt_square.jpeg
-  # _pages
+   # _pages
   - scope:
       path: ""
       type: pages

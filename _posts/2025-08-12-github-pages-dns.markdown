@@ -2,6 +2,8 @@
 layout: single
 title:  "Configuring Custom DNS for GitHub Pages Using Amazon Route 53"
 date:   2025-08-12
+header:
+  og_image: /assets/images/bdt_square.jpeg
 ---
 
 ## Let's configure custom DNS

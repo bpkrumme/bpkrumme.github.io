@@ -2,6 +2,8 @@
 layout: single
 title:  "The Hardware and Software I Use in My Home Lab"
 date:   2025-08-27
+header:
+  og_image: /assets/images/bdt_square.jpeg
 ---
 
 Just like the environments we work with in datacenters and clouds, a homelab can consist of a variety of hardware, software, configurations, interdependencies, and integrations.  This is a description of ***MY*** homelab, which is to say, you might not want or need the hardware and software configuration I use.  If your purposes are similar to mine, feel free to use this as a guide.

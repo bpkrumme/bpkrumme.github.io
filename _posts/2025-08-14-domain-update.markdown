@@ -2,6 +2,8 @@
 layout: single
 title:  "Whoops!  I Made a Boo-boo!  Also: What's Coming on the Site"
 date:   2025-08-14
+header:
+  og_image: /assets/images/bdt_square.jpeg
 ---
 ## *Slight snafu...easy fix!*
 

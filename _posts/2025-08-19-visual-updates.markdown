@@ -2,6 +2,8 @@
 layout: single
 title:  "Site Visual Updates"
 date:   2025-08-19
+header:
+  og_image: /assets/images/bdt_square.jpeg
 ---
 ## Making visual improvements
 

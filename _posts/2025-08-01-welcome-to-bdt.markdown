@@ -2,6 +2,8 @@
 layout: single
 title:  "Welcome to Brad Does Tech!"
 date:   2025-08-01
+header:
+  og_image: /assets/images/bdt_square.jpeg
 ---
 ## Welcome to Brad Does Tech
 
