@@ -6,10 +6,10 @@ header:
   og_image: /assets/images/bdt_square.jpeg
 ---
 
-Just like the environments we work with in datacenters and clouds, a homelab can consist of a variety of hardware, software, configurations, interdependencies, and integrations.  This is a description of ***MY*** homelab, which is to say, you might not want or need the hardware and software configuration I use.  If your purposes are similar to mine, feel free to use this as a guide.
+Just like the environments we work with in datacenters and clouds, a homelab can consist of a variety of hardware, software, configurations, interdependencies, and integrations.  This is a description of ***MY*** homelab, which is to say, you might not want or need the hardware and software configuration I use.  If your purposes are similar to mine, feel free to use this for inspiration.
 
 ## The purposes for my lab
-
+he hardware and software configuration I use. If 
 As a solution architect for a large tech company, I spend a fair amount of my time designing solutions for customers, learning about new features in our products, testing new integrations between our products and 3rd parties, and building demonstrations of technology.  All of this is in an effort to earn business from our customers.
 
 I won't beat around the bush.  The primary reason I have a homelab is because it helps me earn more money.  It does also raise my personal expenses, but as with the technology we use to enable businesses, the investment made into technology is an enabler for me to do my job better and more efficiently.
