@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Site visual updates"
+title:  "Site Visual Updates"
 date:   2025-08-19
 ---
 ## Making visual improvements

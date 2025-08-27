@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "The Hardware and Software I use in my Homelab"
+title:  "The Hardware and Software I Use in My Home Lab"
 date:   2025-08-27
 ---
 

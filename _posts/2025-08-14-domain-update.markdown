@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Whoops!  I made a boo-boo!  Also: what's coming on the site"
+title:  "Whoops!  I Made a Boo-boo!  Also: What's Coming on the Site"
 date:   2025-08-14
 ---
 ## *Slight snafu...easy fix!*
