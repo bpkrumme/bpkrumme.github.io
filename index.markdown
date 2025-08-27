@@ -8,6 +8,9 @@ author: Brad
 header:
   image: /assets/images/bdt_wide_thin.jpg
 ---
-{%- assign latest_post = site.posts | first -%}
+
+{%- assign latest_post = site.posts | first -%} \
+
 # {{ latest_post.title }}
+
 {{ latest_post.content }}
