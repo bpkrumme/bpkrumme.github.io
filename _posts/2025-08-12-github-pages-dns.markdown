@@ -4,6 +4,8 @@ title:  "Configuring Custom DNS for GitHub Pages Using Amazon Route 53"
 date:   2025-08-12
 ---
 
+## Let's configure custom DNS
+
 In my efforts to share knowledge about tech things, setting up a blog seemed like one of the easier things to do.  It is a challenge that is relatively easy to accomplish using tools which are freely available.
 <!-- endexcerpt -->
 
