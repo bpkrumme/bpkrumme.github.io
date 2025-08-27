@@ -69,9 +69,13 @@ This one piece of hardware serves multiple purposes.  In fact, I used to run my 
 
 ### Kubernetes Cluster
 
-If you haven't explored the world of containerization and orchestration of container workloads, I highly recommend you at least become familiar.  With the advent of container-native virtualization, kubernetes is quickly becoming a core component of many datacenters.  Many people won't need or want to run a full kubernetes cluster in their homelab.  Even I don't specifically ***NEED*** to have a cluster in my lab, however my career path and interactions with customers pushed me in that direction.
+If you haven't explored the world of containerization and orchestration of container workloads, I highly recommend you at least become familiar.  With the advent of container-native virtualization, Kubernetes is quickly becoming a core component of many datacenters.  Many people won't need or want to run a full Kubernetes cluster in their homelab.  Even I don't specifically ***NEED*** to have a cluster in my lab, however my career path and interactions with customers pushed me in that direction.
 
-Installing a kubernetes cluster isn't for the faint of heart, especially if you decide to DIY.  I chose an easier option, which is Red Hat OpenShift Container Platform.  Other than being a platform I am well versed in, the installation of OpenShift is a breeze when using the ***Assisted Installer*** or ***Installer Provisioned Infrastructure*** installation methods.  Beyond methods, there are mulitple installation topology options for OpenShift, including ***SNO*** or ***Single-Node Openshift*** which runs all of the platform on one host, a ***Compact Cluster*** which is a 3-node cluster combining the master/control plane and worker nodes, or traditional 5+ node clusters with separate masters and workers.  Any of these topologies can run on bare metal, virtual machines, or a hyperscaler.
+Kubernetes is a cluster of computers which are interconnected to work as a single unit or platform.  The cluster is comprised of a ***control plane***, which coordinates activity in the cluster, and ***nodes*** or ***workers***, which run logical groups of containerized workloads called ***pods***.  Pods encapsulate one or more ***containers***, storage resources, a unique IP address, and options which control how the container(s) should run.  Here's a basic diagram of what a Kubernetes cluster might look like:
+
+![Image of K8s Cluster](/assets/images/8-27-25/kubernetes-cluster-architecture.svg)
+
+Installing a Kubernetes cluster isn't for the faint of heart, especially if you decide to DIY.  I chose an easier option, which is Red Hat OpenShift Container Platform.  Other than being a platform I am well versed in, the installation of OpenShift is a breeze when using the ***Assisted Installer*** or ***Installer Provisioned Infrastructure*** installation methods.  Beyond methods, there are mulitple installation topology options for OpenShift, including ***SNO*** or ***Single-Node Openshift*** which runs all of the platform on one host, a ***Compact Cluster*** which is a 3-node cluster combining the master/control plane and worker nodes, or traditional 5+ node clusters with separate masters and workers.  Any of these topologies can run on bare metal, virtual machines, or a hyperscaler.
 
 I chose bare metal for my cluster for a few reasons.  First and foremost, bare metal is required to enable virtualization.  I also wanted a cluster which is performant when I need it to be, has the option to use local storage, and has high-speed networking available.  These things can be achieved in a hyperscaler or with virtualization as well, but bare metal fit the bill for me.
 
@@ -89,11 +93,11 @@ My cluster started life as a 3-node compact cluster.  The hardware for these 3 m
 
 ![Image of MinisForum MS-A1](/assets/images/8-27-25/minisforum-msa1.png)
 
-On top of OpenShift Container Platform, I have also opted to install several useful ***Operators*** which aid in configuration of some of the necessary components to make a kubernetes/OpenShift cluster operational.  These include the ***Local Storage*** operator, ***OpenShift Data Foundation***, the ***Kubernetes NMState*** Operator, and ***OpenShift Virtualization*** to name a few.
+On top of OpenShift Container Platform, I have also opted to install several useful ***Operators*** which aid in configuration of some of the necessary components to make a Kubernetes/OpenShift cluster operational.  These include the ***Local Storage*** operator, ***OpenShift Data Foundation***, the ***Kubernetes NMState*** Operator, and ***OpenShift Virtualization*** to name a few.
 
 ### Kubernetes Cluster Expansion
 
-As mentioned earlier, my kubernetes cluster started life as a ***Compact Cluster***, which did well for some time.  As I started adding more and more workloads it became obvious that I needed to expand the cluster.  Luckily, with the OpenShift ***Assisted Installer*** it is fairly trivial to add more nodes to an existing cluster.
+As mentioned earlier, my Kubernetes cluster started life as a ***Compact Cluster***, which did well for some time.  As I started adding more and more workloads it became obvious that I needed to expand the cluster.  Luckily, with the OpenShift ***Assisted Installer*** it is fairly trivial to add more nodes to an existing cluster.
 
 I opted to add two additional machines to the cluster, however these are not the same hardware spec as the original 3-node design.  Just 9 months after MinisForum launched the MS-A1, they made the design ***BETTER*** and launched the ***MS-A2 Mini Workstation*** which was my choice for cluster expansion.  The selling point, for me, was twice the CPU cores PLUS 10GbE networking!  These were fully populated machines instead of barebones.  Here are the specs:
 
@@ -112,7 +116,15 @@ You'll notice that these look nearly identical to the previous machines, and oth
 
 ### Cloud Providers
 
-I'm including cloud providers as part of my homelab, even though they don't reside in my home.  I maintain an AWS account, which I use for temporary workloads and demonstrations of automations.  I primarily use the EC2, Route53, and S3 services from Amazon, but this could expand to others in the future.  My consumption of cloud services could expand to Azure or Google in the future as well, but for now I am only using Amazon as it is still the most widely used hyperscaler.
+I'm including cloud providers as part of my homelab, even though they don't reside in my home.  I maintain an AWS account, which I use for temporary workloads and demonstrations of automations.  I primarily use the EC2, Route 53, and S3 services from Amazon, but this could expand to others in the future.  My consumption of cloud services could expand to Azure or Google in the future as well, but for now I am only using Amazon as it is still the most widely used hyperscaler.
+
+EC2, or Elastic Cloud Compute is a very common service.  It provides virtual machines on demand running the operating system you choose.  Every major OS including multiple versions of Windows, Several releases of MacOS, and the major distributions of Linux are available.  You can select the CPU architecture you need, the number of vCPUs, the amount of memory, and the type and amount of storage you need.  I use EC2 frequently for creating and destroying servers as part of demos of Ansible Automation Platform as both a standalone automation platform, and also AAP integrated with Hashicorp Terraform.
+
+Route 53 is Amazon's DNS service.  It provides the capability to host DNS zones as well as manage registered domains.  I use Route 53 as the custom DNS provider for this site...as well as for machines I create and destroy during demos.
+
+S3, or Simple Storage Service, is an object storage service.  It offers scalable storage which is presented as "buckets" which you could consider like a top-level folder.  Those buckets are used to store "objects" which could be files such as photos, videos, or documents.  My use case is mostly around Terraform state which I use for automation demonstrations.
+
+I tend not to leave any EC2 machines up and running as this will incur extra cost.  If you're new to cloud providers, let this be the first tip I give you.  Don't leave anything running in the cloud.  I made this mistake once at it cost me several hundred dollars.  The bad part is I ***KNEW*** not to leave any services running, but I forgot and left several expensive EC2 instances running for nearly a month.  Needless to say, I wasn't very happy about that.
 
 ### Coming Soon
 
