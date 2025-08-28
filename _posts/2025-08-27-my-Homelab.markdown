@@ -9,7 +9,7 @@ header:
 Just like the environments we work with in datacenters and clouds, a homelab can consist of a variety of hardware, software, configurations, interdependencies, and integrations.  This is a description of ***MY*** homelab, which is to say, you might not want or need the hardware and software configuration I use.  If your purposes are similar to mine, feel free to use this for inspiration.
 
 ## The purposes for my lab
-he hardware and software configuration I use. If 
+
 As a solution architect for a large tech company, I spend a fair amount of my time designing solutions for customers, learning about new features in our products, testing new integrations between our products and 3rd parties, and building demonstrations of technology.  All of this is in an effort to earn business from our customers.
 
 I won't beat around the bush.  The primary reason I have a homelab is because it helps me earn more money.  It does also raise my personal expenses, but as with the technology we use to enable businesses, the investment made into technology is an enabler for me to do my job better and more efficiently.
@@ -79,7 +79,7 @@ Installing a Kubernetes cluster isn't for the faint of heart, especially if you 
 
 I chose bare metal for my cluster for a few reasons.  First and foremost, bare metal is required to enable virtualization.  I also wanted a cluster which is performant when I need it to be, has the option to use local storage, and has high-speed networking available.  These things can be achieved in a hyperscaler or with virtualization as well, but bare metal fit the bill for me.
 
-My cluster started life as a 3-node compact cluster.  The hardware for these 3 machines is identical.  Each one is a MinisForum MS-A1 mini workstation.  Minisforum launched the MS-A1 in July of 2024 so unlike the Intel NUC which is my lab core, these machines are quite new.  Similarly to the NUC, I opted to buy the barebones model.  One advantage to the MS-A1 is it uses the AMD AM5 socket and it's barebones model ships without a CPU, RAM, or Storage, so I was able to choose all of them.  Here are the specs I went with:
+My cluster started life as a 3-node compact cluster.  The hardware for these 3 machines is identical.  Each one is a MinisForum MS-A1 mini workstation.  MinisForum launched the MS-A1 in July of 2024 so unlike the Intel NUC which is my lab core, these machines are quite new.  Similarly to the NUC, I opted to buy the barebones model.  One advantage to the MS-A1 is it uses the AMD AM5 socket and it's barebones model ships without a CPU, RAM, or Storage, so I was able to choose all of them.  Here are the specs:
 
 * CPU: AMD Ryzen(TM) 7 9700X
   * 8 Cores with HT (16 logical) and 65W TDP (low power consumption)
@@ -94,6 +94,9 @@ My cluster started life as a 3-node compact cluster.  The hardware for these 3 m
 ![Image of MinisForum MS-A1](/assets/images/8-27-25/minisforum-msa1.png)
 
 On top of OpenShift Container Platform, I have also opted to install several useful ***Operators*** which aid in configuration of some of the necessary components to make a Kubernetes/OpenShift cluster operational.  These include the ***Local Storage*** operator, ***OpenShift Data Foundation***, the ***Kubernetes NMState*** Operator, and ***OpenShift Virtualization*** to name a few.
+
+****EDIT****  After I published this article, I realized I said *NOTHING* about ***Ansible Automation Platform***, where it runs in my lab, or which installation paradigm I use.  Long story short, because I have an OpenShift cluster, I am able to use the ***Ansible Automation Platform Operator*** as my primary AAP instance.  I do also test the RPM and Podman Container install and upgrade methods when necessary.
+
 
 ### Kubernetes Cluster Expansion
 
@@ -112,11 +115,11 @@ I opted to add two additional machines to the cluster, however these are not the
 
 ![Image of MinisForum MS-A2](/assets/images/8-27-25/minisforum-msa2.png)
 
-You'll notice that these look nearly identical to the previous machines, and other than a very slight difference in length, only the internal hardware is different.  In fact, hindsight being 20/20 I would have preferred to have 5 of the MS-A2 machines for my cluster instead.  The 10GbE networking alone nearly makes it worth replacing the MS-A1 machines.  Currently, however, my network does not support 10GbE to clients, so I would have to make changes there as well.
+You'll notice that these look nearly identical to the previous machines, and other than a very slight difference in length, only the internal hardware is different.  In fact, hindsight being 20/20 I would have preferred to have 5 of the MS-A2 machines for my cluster instead.  The 10GbE networking alone nearly makes it worth replacing the MS-A1 machines.  Currently, however, my network does not support 10GbE for clients, so I would have to make changes there as well.
 
 ### Cloud Providers
 
-I'm including cloud providers as part of my homelab, even though they don't reside in my home.  I maintain an AWS account, which I use for temporary workloads and demonstrations of automations.  I primarily use the EC2, Route 53, and S3 services from Amazon, but this could expand to others in the future.  My consumption of cloud services could expand to Azure or Google in the future as well, but for now I am only using Amazon as it is still the most widely used hyperscaler.
+I'm including cloud providers as part of my homelab, even though they don't reside in my home.  I maintain an AWS account, which I use for temporary workloads and demonstrations of automations.  I primarily use the EC2, Route 53, and S3 services from Amazon, but this could expand to others in the future.  My consumption of cloud providers could expand to Azure or Google in the future as well, but for now I am only using Amazon as it is still the most widely used hyperscaler.
 
 EC2, or Elastic Cloud Compute is a very common service.  It provides virtual machines on demand running the operating system you choose.  Every major OS including multiple versions of Windows, Several releases of MacOS, and the major distributions of Linux are available.  You can select the CPU architecture you need, the number of vCPUs, the amount of memory, and the type and amount of storage you need.  I use EC2 frequently for creating and destroying servers as part of demos of Ansible Automation Platform as both a standalone automation platform, and also AAP integrated with Hashicorp Terraform.
 
@@ -124,7 +127,7 @@ Route 53 is Amazon's DNS service.  It provides the capability to host DNS zones 
 
 S3, or Simple Storage Service, is an object storage service.  It offers scalable storage which is presented as "buckets" which you could consider like a top-level folder.  Those buckets are used to store "objects" which could be files such as photos, videos, or documents.  My use case is mostly around Terraform state which I use for automation demonstrations.
 
-I tend not to leave any EC2 machines up and running as this will incur extra cost.  If you're new to cloud providers, let this be the first tip I give you.  Don't leave anything running in the cloud.  I made this mistake once at it cost me several hundred dollars.  The bad part is I ***KNEW*** not to leave any services running, but I forgot and left several expensive EC2 instances running for nearly a month.  Needless to say, I wasn't very happy about that.
+I tend not to leave any EC2 machines up and running as this will incur extra cost.  If you're new to cloud providers, let this be the first tip I give you.  Don't leave anything running in the cloud.  I made this mistake once and it cost me several hundred dollars.  The bad part is I ***KNEW*** not to leave any services running, but I forgot and left several expensive EC2 instances running for nearly a month.  Needless to say, I wasn't very happy about that.
 
 ### Coming Soon
 
