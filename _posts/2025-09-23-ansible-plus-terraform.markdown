@@ -377,7 +377,7 @@ variable "instance_domain_name" {
 variable "hosted_zone_id" {
   description = "The hosted zone id for Route 53"
   type        = string
-  default     = "Z0675450157KVOQPGQFUR"
+  default     = "<<REDACTED>>"
 }
 variable "instance_environment" {
   description = "The environment for grouping EC2 instances."
