@@ -35,7 +35,7 @@ Infrastructure provisioning, especially in the public cloud is where Terraform r
 
 Before I can actually start defining some infrastructure as code, I need to have some tools installed and configurations set.  Here's a quick list:
 
-NecessaryTools:
+Necessary Tools:
 
 * Terraform CLI
 * Cloud CLI
