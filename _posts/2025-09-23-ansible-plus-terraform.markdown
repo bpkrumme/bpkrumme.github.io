@@ -467,6 +467,10 @@ Now that you have your configuration, you can initialize and apply the configura
 
     ```
 
+5. Should you want to update the configuration, simply modify the confiuration and run `terraform apply` again.
+
+6. In the event you want to completely remove the infrastructure, you can run `terraform destroy` to delete all of the objects which were created previously.
+
 ### Terraform Documentation and Resources
 
 I understand that my examples here may not be 100% complete, and I don't want you fumbling through your first attempts at running a Terraform project.  Here are some resources to help.
