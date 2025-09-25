@@ -27,7 +27,7 @@ Luckily, this conversation is changing due to the acquisition of HashiCorp by IB
 
 The tools complement each other nicely, with Terraform's primary use case as an Infrastructure-as-Code state machine and Ansible's use case as the orchestrator of that infrastructure's configuration.  It's also convenient that both Ansible and Terraform share some strengths which make them powerful weapons for the IT lifecycle management arsenal. Projects for both can be stored in a version control system such as git, allowing for change tracking, collaboration amongst members of a team, and branching/merging/review of new features and bug fixes.
 
-## Automating Provisioning and Configuration with Terraform
+## Automating Provisioning with Terraform
 
 Infrastructure provisioning, especially in the public cloud is where Terraform really shines.  I'll show you the basics of Terraform and how to provision a basic environment.
 
