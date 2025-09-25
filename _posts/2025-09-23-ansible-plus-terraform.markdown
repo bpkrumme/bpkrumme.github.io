@@ -488,4 +488,4 @@ If you would like to use my basic project as a reference you can find the full c
 
 ### Up Next
 
-Be on the lookout for part 2, where I will use Ansible to apply Terraform, then create a workflow in Automation Controller to apply the Terraform and also configure the servers.
+Be on the lookout for parts 2 and 3, where I will use Ansible to apply Terraform, then create a workflow in Automation Controller to apply the Terraform and also configure the servers.
