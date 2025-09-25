@@ -47,7 +47,6 @@ Optional Tools and Add-Ons:
 * An IDE (Integrated Development Environment) such as Visual Studio Code
 * Git or other source control
 * Terraform Extension for Visual Studio Code
-* Ansible Development Tools and Ansible Lightspeed
 * Terraform Cloud Development Kit or MCP Server
 
 It's extremely helpful to use a development environment you are familiar with.  I am very experienced working in a Linux shell and could do all of my development using vi, however many tools available today have features like automatic syntax highlighting, inline debugging, and git integration making the experience a bit more seamless.
