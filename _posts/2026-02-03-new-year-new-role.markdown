@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "New Year, New Role - What's going on with me in 2026 and what it means for the content here"
-date:   2026-02-06
+date:   2026-02-03
 header:
   og_image: /assets/images/bdt_square.jpeg
 ---
