@@ -1,0 +1,31 @@
+---
+layout: single
+title:  "New Year, New Role - What's going on with me in 2026 and what it means for the content here"
+date:   2026-02-06
+header:
+  og_image: /assets/images/bdt_square.jpeg
+---
+
+## What's going on with me in 2026
+
+The beginning of every new calendar year comes with change especially when, like me, you work in a large Enterprise sales organization.  This year is no different, and I have some news to share which is going to be great for all of you.
+
+### The changes for me
+
+As a Specialist Solution Architect, my job entails what I describe as very tactical engagements with customers.  It starts with an account team who was facing a specific challenge around a customer's use or adoption of Ansible Automation Platform.  That account team calls me or one of my teammates asking for specific guidance, demonstration, or explanation on the features, functionality, and integrations with AAP.  I would act a bit like an operative in special forces.  I would prepare to solve or alleviate the specific challenge, join a call or meeting with that customer, demonstrate the solution for their challenge, and then move on to the next customer challenge.
+
+Solving problems is a big part of why I love my job, and this offered me the opportunity to engage with customers on some unique and interesting problems.  Even though I was doing some really cool things with some awesome technology, the last several years felt as if I was missing something.  I just didn't have the same job satisfaction as I'd experienced when I started my career as a Solution Architect.  I did some introspection and realized what I was missing.  I realized that even though I was super happy with the technology I specialized in, and I got excited about the advancements we've made around Enterprise Automation and Orchestration, I was missing the challenge of solving the bigger, more impactful problems that a business faces when enabling, refreshing, or replacing technology.
+
+What this did was lead me full circle, back to my "roots" as a Solution Architect.  The timing was pretty good also.  There just happened to be an opening for role on my old team.  I won't lie and say I made the decision easily.  It was actually pretty tough to take the plunge and make another move.  In the 6+ years I've been at Red Hat, I've been through 4 different roles, all as a Solution Architect, but with different specialties. I started as what we call an Account Solution Architect, which is meant to be a generalist role with responsibility for the overall technical strategy for a set of customers.  From there, I spent a short time as a "Platform" SA with specialty in Red Hat Enterprise Linux and Ansible.  This role didn't last long, so I had to move into what we called a "Hybrid Cloud" SA, with technical responsibility for BOTH Ansible Automation Platform and the Openshift ecosystem.  This one was the most challenging because it required an extraordinary amount of context switching.  It was nearly impossible to keep track of my day-to-day.  The last 3 years, I've spent as an Ansible Specialist SA, focusing 100% on Ansible Automation Platform.
+
+That focus allowed me to gain exceptional knowledge around the capabilities and value our customers can gain from adopting Ansible as their enterprise orchestration platform, and also gave me the latitude to explore all of the possible and necessary integrations between an enterprise automation platform and other core IT service.  What it didn't do is allow me to exploit my knowledge for the benefit of customers...at least not in the way that really satisfies me.  So when another Account SA role opened, I had to truly consider what I valued and the role that would make me happiest.
+
+The stars had to align in just the right way for me to make a move...and boy howdy did they align.  The territory with the opening also needed a new sales executive.  As a Solution Architect, having the right person you work with day in and day out can make the difference between success and failure.  When I learned who the sales executive was going to be for the territory, it made the decision much easier.  This person is someone I trust, who mentored me when I was completely new to technical sales.  He shares many of the same values as me, is hungry for success, and is driven to help his entire team succeed.  One checkbox down!  The territory is also covered by an exceptional Application Platform specialist who I haven't worked with directly in several years.  The two of us were highly successful back when I was an Account SA the first time.  Another checkbox down!  And to top it off, the manager is one of the best I've had in my multi-decade career in technology.  It was a trifecta of positive reasons to make the move.
+
+So at our yearly sales kickoff conference, we had conversations, I applied for the role, and accepted a role as an Account Solution Architect...all within just a few days.  It was a whirlwind, but I think it's going to be worth it!
+
+### The changes for all of you
+
+I don't just write for myself.  I write to share my experiences, technical knowledge, and my expertise with anyone who is willing to spend a few minutes reading something that a random guy puts on the internet.  My goal is to make people successful with their technical endeavors and in their careers.  This means that my focus for content has shifted.  Previously, all of my content was focused on Ansible Automation Platform and the wonderful ways it can enable efficiency in IT.  I will still be publishing that content, AND I will broaden the scope to other technical challenges both with Red Hat software and other more general technical challenges that I see my customers facing.  Additionally, I tend to focus quite a bit on team and organizational culture...something that doesn't get enough attention unless there is pain involved.
+
+So you, dear readers, get more ramblings about more tech as well as my opinions on team dynamics, organizational structuring, and technology strategy.  Expect a post later this week...
