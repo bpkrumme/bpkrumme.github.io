@@ -3,7 +3,7 @@ layout: single
 title:  "The Ansible Automation Platform Openshift Operator"
 date:   2026-02-06
 header:
-  og___image: /assets/images/bdt___square.jpeg
+  og_image: /assets/images/bdt_square.jpeg
 ---
 
 ## Let's set the stage for all of my content
