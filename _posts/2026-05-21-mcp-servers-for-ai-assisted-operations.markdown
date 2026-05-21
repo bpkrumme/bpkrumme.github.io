@@ -52,7 +52,7 @@ Because this server authenticates against the cluster API, I issue a dedicated b
 
 The [linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server) is intentionally read-only.  It wraps standard Linux utilities and returns formatted results for system information, systemd services, processes, network state, block devices, and journal or file logs.  Log access can be restricted with configurable allowlists via `LINUX_MCP_ALLOWED_LOG_PATHS`.
 
-Every tool accepts an optional `host` parameter, so the same server can look at my laptop, my lab core NUC, or a VM over SSH without installing agents on each machine.  That remote execution model is what Red Hat describes in their [root-cause analysis article for VS Code and Cursor](https://developers.redhat.com/articles/2026/02/11/leverage-ai-root-cause-analysis-mcp-servers-vs-code-and-cursor).  The assistant gets eyes on real journal entries and service state instead of guessing at a likely cause.
+Every tool accepts an optional `host` parameter, so the same server can look at my laptop, my lab core NUC, or a VM over SSH without installing agents on each machine.  That remote execution model is what Red Hat describes in [root-cause analysis article for VS Code and Cursor](https://developers.redhat.com/articles/2026/02/11/leverage-ai-root-cause-analysis-mcp-servers-vs-code-and-cursor).  The assistant gets eyes on real journal entries and service state instead of guessing at a likely cause.
 
 ## Connecting Cursor to the servers
 
