@@ -421,8 +421,8 @@ Most of my early failures were missing SCC grants or a host I had automated in A
 
 Deploying the RHEL MCP server on Openshift turned out to be more moving parts than adding `spec.mcp` to an existing AAP custom resource, but the model is the same: run the bridge close to the infrastructure it talks to, expose one HTTPS endpoint, and keep the assistants read-only on hosts until you have a reason to loosen that.
 
-If you've been following the MCP series, this is the homelab deployment story behind the RHEL bullet in the overview post.  I still owe a write-up on hardening ___openshift-mcp___ tokens unless life gets in the way again.
+If you've been following the MCP series, this is the homelab deployment story behind the RHEL bullet in the overview post.  The Openshift MCP follow-up is posted next in the series.
 
 For authoritative background, see [Using the MCP server for RHEL](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/interacting_with_the_command-line_assistant_powered_by_rhel_lightspeed/using-the-rhel-mcp-server-to-enable-ai-assistants-to-run-discover-and-troubleshoot-complex-issues) and [Leverage AI for root-cause analysis with MCP servers in VS Code and Cursor](https://developers.redhat.com/articles/2026/02/11/leverage-ai-root-cause-analysis-mcp-servers-vs-code-and-cursor).  The upstream project is at [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server).
 
-As with everything I write about my lab, this is how ___I___ run things.  Your namespaces, hostnames, and security posture may differ.  Use developer-preview features accordingly, and keep SSH keys out of git.
+As with everything I write about my lab, this is how ___I___ run things.  Your namespaces, hostnames, and security posture may differ.  Use developer-preview features accordingly, and keep secret data out of git.

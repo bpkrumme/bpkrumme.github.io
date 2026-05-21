@@ -129,4 +129,4 @@ I plan to write follow-up posts that go deeper on individual servers: deploying 
 
 For more detail from Red Hat, see the posts on [the AAP MCP server](https://www.redhat.com/en/blog/it-automation-agentic-ai-introducing-mcp-server-red-hat-ansible-automation-platform) and [MCP for root-cause analysis in VS Code and Cursor](https://developers.redhat.com/articles/2026/02/11/leverage-ai-root-cause-analysis-mcp-servers-vs-code-and-cursor).  The upstream projects live on GitHub at [openshift/openshift-mcp-server](https://github.com/openshift/openshift-mcp-server) and [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server).
 
-As with everything I write about my lab, this is how ___I___ run things.  Your requirements, risk tolerance, and supported product versions may differ.  Use the previews accordingly, and keep your tokens out of git.
+As with everything I write about my lab, this is how ___I___ run things.  Your requirements, risk tolerance, and supported product versions may differ.  Use the previews accordingly, and keep secret data out of git.
