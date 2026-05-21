@@ -46,7 +46,7 @@ The [openshift-mcp-server](https://github.com/openshift/openshift-mcp-server) pr
 
 The server also ships prompts such as `cluster-health-check` and `vm-troubleshoot` that bundle multiple tool calls into guided workflows.  Those are handy when you want the assistant to follow a structured diagnostic path instead of improvising one tool at a time.
 
-Because this server authenticates against the cluster API, I issue a dedicated bearer token with scoped permissions rather than handing it a cluster-admin kubeconfig.
+Because this server authenticates against the cluster API, I issue a dedicated bearer token with scoped permissions rather than handing it cluster-admin privileges.
 
 ### RHEL MCP (linux-mcp-server)
 

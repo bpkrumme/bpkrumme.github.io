@@ -6,7 +6,7 @@ header:
   og_image: /assets/images/bdt_square.jpeg
 ---
 
-## There's still more than one best tool...
+## There's still more than one best tool
 
 In Part 1, I showed you how to configure a basic Terraform project and deploy some infrastructure, in particular EC2 instances on AWS.  Terraform is a best of breed Infrastructure-as-Code utility and really excels at provisioning the infrastructure components I need to enable a new IT service.  For Day 0 Operations, Terraform is an excellent choice.
 

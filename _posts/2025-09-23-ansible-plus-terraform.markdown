@@ -6,7 +6,7 @@ header:
   og_image: /assets/images/bdt_square.jpeg
 ---
 
-## There's more than one best tool...
+## There's more than one best tool
 
 Terraform and Ansible working together is a subject I get asked about fairly regularly.  Most of the time, the way the conversation starts is an objection masked as a question, and it is usually an engineer who has an affinity for Terraform as their Infrastructure-as-code tool of choice.  They really want to know why they should consider Ansible for part of their provisioning process, instead of sticking with what they know.  I don't blame them, either, as Terraform excels at provisioning infrastructure, especially in hyperscalers such as AWS, Azure, and GCP.
 

@@ -6,7 +6,7 @@ header:
   og_image: /assets/images/bdt_square.jpeg
 ---
 
-## It's been a couple of months...
+## It's been a couple of months
 
 I was working hard on the Ansible + Terraform series...and was almost ready to complete part 3 (which is still coming, btw!), but life reared its ugly head and presented me with some challenges I couldn't ignore.
 
