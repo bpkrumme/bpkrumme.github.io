@@ -77,9 +77,7 @@ defaults:
       author_profile: true
       read_time: true
       show_date: true
-      author: Brad
-      share: true
-      toc: true
+      author: Brad 
       toc_sticky: true
    # _pages
   - scope:
