@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "MCP Servers: Giving AI Assistants Real Context for My Homelab"
+title:  "MCP Servers: Giving AI Assistants Real Context"
 date:   2026-05-21
 header:
   og_image: /assets/images/bdt_square.jpeg
