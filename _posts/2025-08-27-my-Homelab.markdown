@@ -97,7 +97,6 @@ On top of OpenShift Container Platform, I have also opted to install several use
 
 ****EDIT****  After I published this article, I realized I said *NOTHING* about ***Ansible Automation Platform***, where it runs in my lab, or which installation paradigm I use.  Long story short, because I have an OpenShift cluster, I am able to use the ***Ansible Automation Platform Operator*** as my primary AAP instance.  I do also test the RPM and Podman Container install and upgrade methods when necessary.
 
-
 ### Kubernetes Cluster Expansion
 
 As mentioned earlier, my Kubernetes cluster started life as a ***Compact Cluster***, which did well for some time.  As I started adding more and more workloads it became obvious that I needed to expand the cluster.  Luckily, with the OpenShift ***Assisted Installer*** it is fairly trivial to add more nodes to an existing cluster.
