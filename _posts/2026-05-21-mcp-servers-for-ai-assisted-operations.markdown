@@ -89,7 +89,7 @@ A few things I learned while getting this running:
 
 * Treat tokens like passwords.  The AAP and Openshift servers expect bearer credentials.  Store them in Cursor's configuration or a secrets mechanism, not in blog posts or public git repositories.
 * Match transport to deployment.  Upstream docs often show `stdio` with Podman on your workstation.  I chose in-cluster HTTP because my assistants and my platform already live in the same lab environment.
-* Enable only what you need per project.  Cursor lets you turn individual MCP servers on or off.  When I'm editing Jekyll content I don't need AAP.  When I'm working on CASC tree automation I enable `aap-mcp` and often `rhel-mcp` together.
+* Enable only what you need per project.  Cursor lets you turn individual MCP servers on or off.  When I'm editing Jekyll content for blog posts, I don't need AAP.  When I'm working on CASC tree automation I enable `aap-mcp` and often `rhel-mcp` together.
 
 ## How I use them day to day
 
