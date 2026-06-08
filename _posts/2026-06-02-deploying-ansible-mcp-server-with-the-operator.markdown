@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Deploying the Ansible MCP Server with the Operator-Managed Platform"
-date:   2026-06-05
+date:   2026-06-02
 header:
   og_image: /assets/images/bdt_square.jpeg
 ---
