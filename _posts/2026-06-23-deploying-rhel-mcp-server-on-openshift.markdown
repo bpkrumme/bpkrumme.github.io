@@ -8,7 +8,7 @@ header:
 
 ## Let's set the stage
 
-Several weeks ago I started a short series on ___Model Context Protocol (MCP)___ servers in my homelab.  That first post was a broad overview of how I use MCP with Cursor across Openshift, RHEL, and Ansible Automation Platform.  Last week I walked through enabling the ___Ansible MCP server___ on my operator-managed AAP instance.
+Several weeks ago I started a short series on ___Model Context Protocol (MCP)___ servers in my homelab.  That first post was a broad overview of how I use MCP with Cursor across Openshift, RHEL, and Ansible Automation Platform.  In my last post, I walked through enabling the ___Ansible MCP server___ on my operator-managed AAP instance.
 
 This post is the RHEL piece of that series.
 
